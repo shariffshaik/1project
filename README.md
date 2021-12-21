@@ -1,5 +1,5 @@
-# 1project
-train reservation system
+# project
+##TRAINRESEVATIONSYSTEM
 This ticket booking system is implemented in C programming. 
 It is as same as one can see while we are going for online ticket booking. The following series of steps are being followed while booking a railway ticket in this program
 
@@ -83,6 +83,7 @@ Then the booking details will appear.
 
 NAME:
 AGE:
+TRAIN NUMBER:
 TRAIN NAME:
 DESTINATION:
 SEAT NO:
@@ -94,3 +95,7 @@ DEPARTING TIME:
 #OPTION5
 
 By choosing OPTION 5 we can exit the portal.
+
+
+Thankyou!
+Project by Shariff Shaik
