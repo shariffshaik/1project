@@ -41,7 +41,7 @@ Now if we pick 1 as our option then the LIST of all AVAILABLE TRAINS will be dis
 
 Now if we pick 2 as our option then we can book our train ticket.
 
-we should enter
+We should enter
 
 Our train number:
 
@@ -63,13 +63,13 @@ Then TOTAL COST of the journey will be displayed.
 
 Now if we pick 3 as our option then the we can cancel the booked ticket.
 
-we should enter our name and seat.
+We should enter our name and seat.
 
 Now 
 
-if we conform yes we can cancel our ticket.
+If we conform yes we can cancel our ticket.
 
-if we conform no then ticket won't cancel and the process continues.
+If we conform no then ticket won't cancel and the process continues.
     
 
 
@@ -78,17 +78,17 @@ if we conform no then ticket won't cancel and the process continues.
 
 By choosing option 4 we can CHECK THE STATUS of the ticket.
 
-we should enter name
+We should enter name
 
 Then the booking details will appear.
 
-NAME:
-AGE:
-TRAIN NUMBER:
-TRAIN NAME:
-DESTINATION:
-SEAT NO:
-DEPARTING TIME:
+NAME :
+AGE :
+TRAIN NUMBER :
+TRAIN NAME :
+DESTINATION :
+SEAT NO :
+DEPARTING TIME :
 
 
 
