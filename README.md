@@ -1,4 +1,4 @@
-# project
+# PROJECT
 [TRAINRESEVATIONSYSTEM]       
 This ticket booking system is implemented in C programming. 
 It is as same as one can see while we are going for online ticket booking. The following series of steps are being followed while booking a railway ticket in this program
@@ -41,7 +41,7 @@ Now if we pick 1 as our option then the LIST of all AVAILABLE TRAINS will be dis
 
 Now if we pick 2 as our option then we can book our train ticket.
 
-We should enter
+We should enter,
 
 Our train number:
 
