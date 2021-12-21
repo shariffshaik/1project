@@ -15,8 +15,9 @@ WE GET OPTIONS AS FOLLOWS
 6.  EXIT
 
 
-
-###OPTION1 TRAIN LIST
+ 
+ 
+OPTION1 [TRAIN LIST]
 
 Now if we pick 1 as our option then the LIST of all AVAILABLE TRAINS will be displayed
 
@@ -36,7 +37,7 @@ Now if we pick 1 as our option then the LIST of all AVAILABLE TRAINS will be dis
 
 
 
-####OPTION2 BOOKING
+OPTION2 [BOOKING]
 
 Now if we pick 2 as our option then we can book our train ticket.
 
@@ -58,7 +59,7 @@ Then TOTAL COST of the journey will be displayed.
 
 
 
-#####OPTION3 CANCELLATION
+OPTION3 [CANCELLATION]
 
 Now if we pick 3 as our option then the we can cancel the booked ticket.
 
@@ -73,7 +74,7 @@ Now
 
 
 
-######OPTION4 CHECK OUR STATUS
+OPTION4 [CHECK OUR STATUS]
 
 By choosing option 4 we can CHECK THE STATUS of the ticket.
 
@@ -91,8 +92,7 @@ DEPARTING TIME:
 
 
 
-
-#######OPTION5
+OPTION5 [EXIT]
 
 By choosing OPTION 5 we can exit the portal.
 
