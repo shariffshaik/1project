@@ -1,0 +1,209 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+struct details
+{
+	char name[100];
+	int seat_no;
+	int age;
+};
+
+struct details shak[100];
+void traindetails();
+void pickyourtrain();
+void booking();
+void cancellation();
+void status();
+
+int choice,count;
+char temp[100];
+int temp_seat,temp_age,i,flag=0,temp_train_num;
+
+int main()
+{
+    
+	while(1)
+	{
+		printf("\n\n****WELCOME TO TICKET BOOKING/CANCELLATION E-PORTAL****");
+		printf(" \n");
+		printf("\nTHE OPTIONS ARE\n1. AVAILABLE TRAINS\n2. PICK YOUR TRAIN\n3. TICKET BOOKING\n4. CANCELLATION\n5. CHECK STATUS\n6. EXIT\nEnter your choice : \t");
+		scanf("%d",&choice);
+		
+		switch(choice)
+		{
+		    case 1:
+			{
+				traindetails();
+				break;
+			}
+			case 2:
+			{
+				pickyourtrain();
+				break;
+			}
+			case 3:
+			{
+				booking();
+				break;
+			}
+			case 4:
+			{
+				cancellation();
+				break;
+			}
+			case 5:
+			{
+				status();
+				break;
+			}
+			
+			case 6:
+			{
+				exit(1);
+			}
+			default:
+			{
+				printf("\nEnter the valid choice\n");
+				break;
+			}
+		}
+	}
+}
+
+
+void traindetails()
+{
+    
+    printf("List of Available Trains:\n");
+    
+    	printf("-----------------------------------------------------------------------------");
+	printf("\nTr.No\tName\t\t\tDestinations\t\tCharges\t\tTime\n");
+	printf("-----------------------------------------------------------------------------");
+	printf("\n1001\tHubli Express\t\tHyderabad to Hubli\tRs.500\t\t9am");
+	printf("\n1002\tHaripriya Express\tChittor to Hubli\tRs.500\t\t12pm");
+	printf("\n1003\tYasvanthpur Express\tGuntakal to Hubli\tRs.450\t\t8am");
+	printf("\n1004\tBijapur Express\t\tBijapur to Hubli\tRs.450\t\t11am");
+	printf("\n1005\tVizag Express\t\tVizag to Hubli\t\tRs.400\t\t7am");
+	printf("\n1006\tChennai Express\t\tChennai to Hubli\tRs.400\t\t9.30am");
+    printf("\n1007\tKerala Express\t\tKochi to Hubli\t\tRs.350\t\t1pm");
+    printf("\n1008\tTrivandrum Express\tTrivandrum to Hubli\tRs.350\t\t4pm");
+    printf("\n1009\tHampi Express\t\tHampi to Hubli\t\tRs.600\t\t3.35pm");
+    printf("\n1010\tSecunderabad Express\tHubli to Hyderabad\tRs.600\t\t4.15pm");
+    
+}
+
+
+void pickyourtrain()
+{   
+
+    int train_num;
+    printf("Enter your train number : \n");
+    scanf("%d",&train_num);
+    if(train_num>=1001 && train_num<=1010)
+    
+    {
+        temp_train_num=train_num;
+    }
+    
+    else
+    {
+        printf("Your Train NOT FOUND!! Enter Valid Train Number\n");
+    }
+
+
+}
+
+
+void booking()
+{
+    printf("Enter your train number : \n");
+    scanf("%d",&temp_train_num);
+	printf("Enter Number of Tickets you are going to book : \t");
+	scanf("%d",&count);
+	for(i=0;i<count;i++)
+	{
+		printf("Enter the person name %d \t:",i+1);
+		scanf("%s",temp);
+		printf("\nEnter the Seat Number for person %d \t:",i+1);
+		scanf("%d",&temp_seat);
+		printf("\nEnter the age for person %d\t:",i+1);
+		scanf("%d",&temp_age);
+		if(shak[temp_seat].seat_no==0)
+		{
+			strcpy(shak[temp_seat].name,temp);
+			shak[temp_seat].seat_no=1;
+			shak[temp_seat].age=temp_age;
+
+		}
+		else
+		{
+			printf("\nOops! Seat No : %d is already booked by someone. Please try another\n",temp_seat);
+			--i;
+		}
+	}
+	printf("Your Ticket is successfully booked!");
+}
+
+
+void cancellation()
+{
+	printf("Enter the name\t");
+	scanf("%s",temp);
+	printf("\nEnter the seat Number\t");
+	scanf("%d",&temp_seat);
+	
+	if(!strcmp(shak[temp_seat].name,temp))
+	{
+		if(shak[temp_seat].seat_no==1)
+		{
+			shak[temp_seat].seat_no=0;
+			printf("\nYour Ticket is cancelled !");
+		}
+		else
+		{
+			printf("\nPlease Enter the correct information");
+		}
+	}
+	else
+	{
+		printf("\nPlease Enter the correct information\n");
+	}
+}
+
+
+void status()
+{
+    
+	printf("Please Enter your Name to check the status\t");
+	scanf("%s",temp);
+	
+	for(i=0;i<100;i++)
+	{
+	    
+		if(!strcmp(shak[i].name,temp))
+		{
+		    
+			printf("Welcome %s You booked the ticket %d",temp,i);
+			flag=1;
+			break;
+			
+		}
+
+	}
+	
+	
+	if(flag==0)
+	
+	{
+	    
+		printf("\nSorry! You don't have any tickets. Please enter the correct name");
+		
+	}
+}
+//***************************************************************** THE END OF THE PROJECT *****************************************************************
+//cprogramming project by
+// SHARIFF SHAIK
+// 18BEC042
+// 4th year
+//*****************************************************************        THANKYOU        *****************************************************************
