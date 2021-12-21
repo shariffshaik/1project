@@ -82,13 +82,13 @@ We should enter name
 
 Then the booking details will appear.
 
-NAME :
-AGE :
-TRAIN NUMBER :
-TRAIN NAME :
-DESTINATION :
-SEAT NO :
-DEPARTING TIME :
+NAME :       
+AGE :       
+TRAIN NUMBER :       
+TRAIN NAME :       
+DESTINATION :       
+SEAT NO :       
+DEPARTING TIME :       
 
 
 
